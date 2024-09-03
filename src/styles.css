@@ -1,0 +1,26 @@
+.btn-dropdown {
+    cursor: pointer;
+}
+
+/* Dropdown container - positions the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content - hidden by default */
+.dropdown-content {
+    /* display: none; */
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+/* Shows the dropdown menu with JS */

@@ -1,3 +1,1 @@
-function create() {
-  return 10;
-}
+import "./styles.css";
