@@ -12,12 +12,6 @@
     padding: 0;
 }
 
-body {
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
 
 header {
     box-shadow: var(--menu-box-shadow);
@@ -72,7 +66,7 @@ nav {
 
 /* Dropdown Content - hidden by default */
 .dropdown-content {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 42px; /* shifts down relative to nav menu height */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -89,22 +83,12 @@ nav {
     z-index: 1;
 }
 
+.show {
+    display: block;
+}
+
 /* Links on hover */
 .dropdown-content a:hover {
     background-color: var(--menu-hover-color);
     color: white;
-}
-
-.content {
-    flex: 1;
-    padding: 20px 50px;
-    text-align: center;
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0;
-    font-size: 18px;
 }
