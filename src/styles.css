@@ -1,5 +1,65 @@
-.btn-dropdown {
+:root {
+    --menu-font-color: black;
+    --menu-font-size: 18px;
+    --menu-font-weight: 500;
+    --menu-font-family: Arial, Helvetica, sans-serif;
+    --menu-box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    --menu-hover-color: darkgreen;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: white;
+    box-shadow: var(--menu-box-shadow);
+    padding: 20px 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Each tab in the menu */
+.nav-menu {
+    text-decoration: none;
     cursor: pointer;
+    color: var(--menu-font-color);
+    font-size: var(--menu-font-size);
+    font-family: var(--menu-font-family);
+    font-weight: var(--menu-font-weight);
+}
+
+.nav-menu:hover, .nav-menu:focus {
+    color: var(--menu-hover-color);
+    text-decoration: underline;
+}
+
+
+/* DROPDOWN MENU */
+/* Dropdown button */
+.btn-dropdown {
+    background-color: inherit; /* Takes on the color set at nav */
+    color: var(--menu-font-color);
+    font-size: var(--menu-font-size);
+    font-family: var(--menu-font-family);
+    font-weight: var(--menu-font-weight);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-dropdown:hover, .btn-dropdown:focus {
+    color: var(--menu-hover-color);
+    text-decoration: underline;
 }
 
 /* Dropdown container - positions the dropdown content */
@@ -17,10 +77,23 @@
     min-width: 160px;
 }
 
+/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     text-decoration: none;
     display: block;
 }
 
-/* Shows the dropdown menu with JS */
+.content {
+    flex: 1;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 18px;
+}
