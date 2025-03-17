@@ -1,11 +1,14 @@
 import "./styles.css";
 
 const dropdownBtn = document.querySelector(".btn-dropdown");
+
+//Div that contains all the dropdown links
 const dropdownContent = document.querySelector(".dropdown-content");
+
 const dropdownLinks = document.querySelector(".nav-menu");
 
 
-//Displays dropdown content
+//Displays dropdown content when button is clicked
 dropdownBtn.addEventListener("click", () => {
     dropdownContent.classList.add("show");
 });
